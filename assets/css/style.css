@@ -1,0 +1,308 @@
+@font-face {
+	font-family: 'Nexa Light';
+	src:
+	url('fonts/Nexa-Light.woff') format('woff'),
+	url('fonts/Nexa-Light.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Nexa Bold';
+	src:
+	url('fonts/Nexa-XBold.woff') format('woff'),
+	url('fonts/Nexa-XBold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Felt Tip Woman';
+	src: url("fonts/Felt Tip Woman.ttf") format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+
+	font-family: "Nexa Light", sans-serif;
+	font-size: 24px;
+	line-height: 1;
+	letter-spacing: 0.1em;
+	color: #202020;
+}
+
+h1, h2, h3, h4 {
+	margin: 0;
+	padding: 0;
+}
+
+hr {
+	width: 100%;
+	height: 1px;
+	margin: 0;
+	border: 0;
+	background: #f1f1f1;
+}
+
+.container {
+	width: 100%;
+	max-width: 1800px;
+	margin: 0 auto;
+}
+
+
+/* Header */
+.header {
+	position: fixed;
+	left: 0;
+	right: 0;
+	z-index: 5;
+}
+
+
+.nav {
+	display: flex;
+	justify-content: center;
+}
+
+.nav__link {
+	margin: 40px 25px;
+
+	font-size: 24px;
+	color: #f1f1f1;
+	text-transform: uppercase;
+	text-decoration: none;
+
+	transition: color .3s ease-in-out;
+}
+
+.nav__link:hover {
+	color: #202020;
+}
+
+.grey {
+	color: #bebebe;
+}
+
+
+/* Section */
+.section {
+	/*min-height: 100vh;*/
+	position: relative;
+}
+
+.section--logo {
+	background: url('../images/logo/Background.jpg')no-repeat center center/cover;
+}
+
+.section--portfolio {
+	background: url("../images/PF_Background.jpg")no-repeat center center/cover;
+}
+
+.section__inner	{
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+.section__inner--about {
+	flex-direction: row;
+}
+
+.section__inner--portfolio {
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.title {
+	margin-top: 50px;
+
+	font-size: 60px;
+	font-weight: 300;
+	color: #f1f1f1;
+}
+
+.title span {
+	font-family: "Nexa Bold", sans-serif;
+
+}
+
+/* Scroll */
+.scroll {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 40px;
+	z-index: 2;
+
+	text-align: center;
+}
+
+.scroll__info {
+	margin-bottom: 20px;
+	font-size: 18px;
+	color: #bebebe;
+	font-family: "Nexa Bold", sans-serif;
+	text-transform: uppercase;
+}
+
+.scroll__info--logo {
+	color: #f1f1f1;
+}
+
+.scroll__arrow {
+	animation: scroll 2s ease-in-out infinite;
+}
+
+@keyframes scroll {
+	0% {
+		opacity: 0.1;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0.1;
+		transform: translateY(45px);
+	}
+}
+
+
+/* About */
+.photo {
+	width: 50%;
+	margin-right: 50px;
+}
+
+.about {
+}
+
+.about__title {
+	margin-bottom: 40px;
+	font-size: 60px;
+	line-height: 2;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+.about__text {
+	padding-right: 15px;
+	margin-top: 0;
+	margin-bottom: 30px;
+	font-size: 24px;
+	line-height: 2;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 300;
+	letter-spacing: 0.03rem;
+	color: #3e3e3e;
+}
+
+.about__sign {
+	margin-top: 60px;
+	margin-bottom: 40px;
+	font-size: 36px;
+	font-family: "Felt Tip Woman", sans-serif;
+}
+
+
+/* Portfolio */
+.pf {
+	text-align: center;
+
+	height: 600px;
+	overflow: scroll;
+}
+
+.pf__title {
+	margin-bottom: 40px;
+	font-size: 60px;
+	color: #f1f1f1;
+	line-height: 2;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+.pf__photo {
+	padding: 20px;
+
+	transition: all .2s ease-in-out;
+	cursor: pointer;
+}
+
+.pf__photo:hover {
+	transform: scale(1.5);
+}
+
+
+/* Contacts */
+.subtitle {
+	font-size: 30px;
+	margin-bottom: 35px;
+	text-transform: uppercase;
+	font-family: "Nexa Bold", sans-serif;
+}
+
+.mail {
+	margin-bottom: 60px;
+	font-size: 60px;
+	color: #202020;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.tel {
+	margin-bottom: 55px;
+	font-size: 48px;
+	color: #202020;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.social {
+	display: flex;
+	justify-content: space-between;
+}
+
+.social__ico {
+	margin: 0 14px;
+	width: 58px;
+	height: 58px;
+
+	text-align: center;
+
+	border: 2px solid #202020;
+	border-radius: 50%;
+}
+
+.social__link {
+	font-size: 32px;
+	line-height: 58px;
+	color: #202020;
+	text-decoration: none;
+}
+
+/* Footer*/
+.footer {
+	text-align: center;
+}
+
+.footer__line {
+	background-color: #bebebe;
+}
+
+.footer__info {
+	padding: 45px;
+	font-size: 18px;
+	text-transform: uppercase;
+	color: #bebebe;
+}
