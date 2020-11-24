@@ -11,17 +11,18 @@
 </head>
 <body>
 <header class="header">
-	<div class="container">
 		<nav class="nav">
-			<a class="nav__link" href="#home">Home</a>
-			<a class="nav__link" href="#about">About me</a>
-			<a class="nav__link" href="#portfolio">Portfolio</a>
-			<a class="nav__link" href="#contacts">Contact</a>
+			<a class="nav__link" href="#" data-scroll="#home">Home</a>
+			<a class="nav__link" href="#" data-scroll="#about">About me</a>
+			<a class="nav__link" href="#" data-scroll="#portfolio">Portfolio</a>
+			<a class="nav__link" href="#" data-scroll="#contacts">Contact</a>
 		</nav>
-		<hr>
-	</div>
+		<hr class="header__line">
 </header>
 
+<button class="menu-btn" type="button">
+	<span class="menu-btn__ico"></span>
+</button>
 
 <section class="section section--logo" id="home">
 	<div class="container">
@@ -121,6 +122,7 @@
 </footer>
 
 <script src="https://kit.fontawesome.com/25f7218a42.js" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="assets/js/app.js"></script>
 </body>
 </html>
